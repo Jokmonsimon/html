@@ -1,0 +1,109 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff1c;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 200px;
+  margin-left: 50px;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-item {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  color: #e721bc;
+}
+
+.get-news-btn {
+  font-size: 18px;
+  color: white;
+  background-color: #0077b5;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login {
+  margin-right: 50px;
+}
+
+.get-news-btn:hover {
+  background-color: #e721bc;
+}
+
+/* Mobile Navbar */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  padding: 40px;
+  z-index: 101;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items li {
+  margin-bottom: 25px;
+}
+
+.nav-item {
+  color: white;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  color: white;
+  margin-right: 15px;
+}
+
+/* Show desktop items on larger screens */
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .desktop-only {
+    display: flex;
+  }
+
+  .menu-icon,
+  .mobile-nav {
+    display: none;
+  }
+}
